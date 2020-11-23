@@ -16,7 +16,7 @@
 		<nav class="container-fluid fixed-top" id="header-container">
 			<div class="row" id="nav-bar">
 				<div class="col-2" id="left-nav">
-                    <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+                    <span style="font-size:30px; cursor:pointer" onclick="switchMenu();">&#9776; Menu</span>
                     <span id="calendar">&#128467; </span>
             	</div>
             	<div class="col-8" id="center-nav">
@@ -90,20 +90,31 @@
 	</body>
     <!-- Menu NAV Script DEBUT -->
     <script>
+        var menuOpen = false;
+
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
+            menuOpen = true;
         }
 
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
+            menuOpen = false;
+        }
+
+        function switchMenu() {
+            if(menuOpen == false) {
+                openNav();
+            } else {
+                closeNav();
+            }
         }
     </script>
     <!-- Menu NAV Script FIN -->
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
         <div class="overlay-content">
             <strong>
-                <div id="nav-title">Administrateur Réseau c'est quoi?</div>
                 <hr class="line-limiter">
                 <a class="nav-link" href='index.html' active>Accueil</a>
                 <hr class="line-limiter">

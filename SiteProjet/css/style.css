@@ -107,10 +107,6 @@ body {
 	text-align: center;
 }
 
-.footer-line {
-
-}
-
 .footer-img {
 	width: fit-content;
 	margin: auto;
@@ -128,7 +124,6 @@ body {
 /* NAV Footer */
 #footer-nav {
 	width: 100%;
-
 }
 
 #arrow-left {
@@ -163,12 +158,6 @@ body {
 }
 
 /* NAV Menu */
-#nav-title {
-	font-size: 2.5em;
-	color: white;
-	padding-bottom: 1em;
-}
-
 .nav-link {
 	font-family: cursive;
 	font-size: 2em; 
@@ -199,8 +188,9 @@ body {
     background-color: rgb(255,255,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
-    transition: 0.8s;
+    transition: 0.4s;
 }
+
 .overlay-content {
     position: relative;
     top: 15%;
@@ -208,6 +198,7 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -216,14 +207,15 @@ body {
     display: block;
     transition: 0.3s;
 }
+
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: 40px;
+    right: 40px;
     font-size: 60px;
 }
 
